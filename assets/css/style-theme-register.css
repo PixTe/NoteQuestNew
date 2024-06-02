@@ -1,0 +1,147 @@
+/* Основные стили для всего экрана */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Занимает всю высоту окна */
+    display: flex;
+    justify-content: center; /* Центрирует контейнер по горизонтали */
+    align-items: center; /* Центрирует контейнер по вертикали */
+    background-color: #1E1E1E;
+    font-family: 'Comfortaa', sans-serif;
+    color: #ccc;
+}
+
+/* Стили для ссылки для входа */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.login-link a {
+    text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.3s;
+    color: #B96A5A;
+}
+
+.login-link a:hover {
+    color: #863c51;
+}
+
+.back-arr {
+    fill: #ccc;
+    transition: transform 0.3s;
+}
+
+.back-arr:hover {
+    transform: translateX(-5px);
+}
+
+.blur-backgr {
+    /* Размеры и расположение контейнера */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    /* Фон */
+    background: url('/assets/media/svg/animated.svg') no-repeat center center;
+    background-size: cover;
+    
+    /* Размытие фона */
+    filter: blur(3px);
+}
+
+/* Основные стили для контейнера регистрации */
+.register-container {
+    position: fixed;
+    width: 30%; /* Ширина контейнера */
+    padding: 2em;
+    border-radius: 10px;
+    border: 3px solid #B96A5A;
+    background-color: #1E1E1E;
+}
+
+/* Центрирует заголовок */
+h2 {
+    text-align: center;
+    color: #ccc;
+}
+
+/* Стиль для элементов формы */
+.sign-form {
+    display: flex;
+    flex-direction: column; /* Структурирует форму как вертикальный список */
+    gap: 12px; /* Отступ между элементами */
+}
+
+.error{
+    color: #d54c4c;
+    text-align: center;
+}
+
+.error-border {
+    border: 2px solid #d54c4c;
+}
+
+input,
+button {
+    font-family: 'Comfortaa', sans-serif;
+    padding: 12px;
+    background-color: #444444;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #ccc;
+    border-radius: 5px;
+    border: 2px solid #B96A5A;
+    width: 70%; /* Занимает всю ширину контейнера */
+    box-sizing: border-box; /* Учет padding в общей ширине */
+}
+
+button {
+    background-color: #B96A5A;
+    margin: 12px auto;
+    color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #863c51; /* Цвет при наведении */
+}
+
+/* Медиа-запросы для адаптации под меньшие экраны */
+@media (max-width: 768px) {
+    .register-container {
+        width: 50%; /* Увеличиваем ширину контейнера на средних экранах */
+        padding: 1.5em;
+    }
+
+    input, button {
+        width: 90%; /* Увеличиваем ширину полей и кнопок */
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        width: 80%; /* Увеличиваем ширину контейнера на маленьких экранах */
+        padding: 1em;
+    }
+
+    #register-form{
+        gap: 16px;
+    }
+
+    input, button {
+        width: 100%; /* Поля и кнопки занимают всю ширину контейнера */
+        padding: 10px; /* Уменьшаем отступы внутри полей и кнопок */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка */
+    }
+}

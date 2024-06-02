@@ -1,0 +1,50 @@
+<?php
+require_once 'includes/check_session.php'; 
+require_once 'includes/connection.php';
+
+$pdo = pdo();
+$stmt = $pdo->query('SELECT LessonID, Title, Description FROM lessons');
+$lessons = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+    <?php include './components/head.php'; ?>
+    <link rel="stylesheet" id="theme-style" type="text/css" href="/assets/css/style-theme.css">
+    <title>Note Quest</title>
+    <body>
+        <div class="layout">
+            <?php include './components/navbar.php'; ?>
+            <main class="home-page">
+                <section class="container">
+                    <h3>Добро пожаловать на NoteQuest</h3>
+                    <p>NoteQuest — ваш путеводитель в мир музыки! Здесь вы найдёте все инструменты и ресурсы, необходимые для успешного изучения музыки, будь вы новичком или опытным музыкантом.</p>
+                    <p>Наш сайт предлагает интерактивные уроки, тренировки и упражнения, которые помогут вам освоить ноты, интервалы, ритмы и многое другое. Мы стремимся сделать процесс обучения музыке увлекательным и доступным для всех.</p>
+                    <h4>Что вас ждёт на NoteQuest:</h4>
+                    <ul >
+                        <li><p><b>Интерактивные уроки:</b> Практикуйтесь с инструментами и разными музыкальными понятиями в удобной для вас форме.</p></li>
+                        <li><p><b>Удобный интерфейс:</b> Легко ориентируйтесь на сайте и найдите всё, что вам нужно, чтобы стать успешным музыкантом.</p></li>
+                        <li><p><b>Музыкальное сообщество:</b> Присоединитесь к нашему сообществу и общайтесь с другими людьми, увлеченными музыкой.</p></li>
+                    </ul>
+                </section>
+                
+                <section class="info">
+                    <?php foreach ($lessons as $lesson): ?>
+                    <div class="info-block">
+                            <div class="info-content">
+                                <h3><?php echo htmlspecialchars($lesson['Title']); ?></h3>
+                                <p><?php echo htmlspecialchars($lesson['Description']); ?></p>
+                                <div class="link-container">
+                                    <a class="more-link" href="lessons/lesson?id=<?php echo $lesson['LessonID']; ?>">Подробнее >></a>
+                                </div>
+                            </div>
+                    </div>
+                    <?php endforeach; ?>
+                </section>
+            </main>
+            <?php include './components/footer.php'; ?>
+        </div>
+    </body>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/theme-swap.js"></script>
+</html>

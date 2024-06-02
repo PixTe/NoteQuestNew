@@ -1,0 +1,45 @@
+<?php
+require_once 'includes/check_session.php';
+// Подключение к базе данных
+require_once 'includes/connection.php';
+
+// Получение ID урока из параметра запроса
+$lessonId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+$pdo = pdo();
+$stmt = $pdo->prepare('SELECT title, content FROM Lessons WHERE LessonID = ?');
+$stmt->execute([$lessonId]);
+$lesson = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$lesson) {
+    include '404.php';
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" id="theme-style" type="text/css" href="/assets/css/style-theme.css">
+<title><?php echo htmlspecialchars($lesson['title']); ?></title>
+<?php include './components/head.php'?>
+<body>
+<div class="layout">
+        <?php include './components/navbar.php'?>
+        <main class="learn-page">
+            <div class="sidebar" id="sidebar">
+                <button id="closeBtn" class="close-btn"><</button>
+                <ul class="sidebar-links" id="sidebar-links">
+
+                </ul>
+            </div>
+            <button id="openBtn" class="open-btn">></button>
+            <div class="learn-content">
+                <h1><?php echo htmlspecialchars($lesson['title']); ?></h1>
+                <?php echo $lesson['content']; ?>
+            </div>
+        </main>
+        <?php include './components/footer.php'?>
+    </div>
+    </body>
+    </html>
+    

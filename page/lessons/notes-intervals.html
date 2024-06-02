@@ -1,0 +1,77 @@
+<?php
+require_once ('includes/check_session.php');
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<?php include 'components/head.php'?>
+<link rel="stylesheet" id="theme-style" type="text/css" href="/assets/css/style-theme.css">
+<title>Основы музыки</title>
+<body>
+    <div class="layout">
+        <?php include 'components/navbar.php'?>
+            <div class="learn-content">
+            <div class="sidebar" id="sidebar">
+                <button id="closeBtn" class="close-btn"><</button>
+                <ul class="sidebar-links" id="sidebar-links">
+
+                </ul>
+            </div>
+            <button id="openBtn" class="open-btn">></button>
+        <main class="learn-page">
+                <h1>Интервалы и главные аккорды мажора и минора, разрешение интервалов и аккордов</h1>
+                <h2 class="section">Интервалы натуральных мажора и минора</h2>
+                <p>
+                    В натуральном мажоре и миноре есть только диатонические интервалы, то есть чистые, большие, малые и одна пара тритонов (увеличенная кварта и уменьшенная квинта), которые обращаются друг в друга. Количество каждого вида интервалов соответствует их количеству между основными ступенями звукоряда (<b>до ре ми фа соль ля си</b>). Это можно выразить в следующей таблице:
+                </p>
+                <div class="notes-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Интервал</th>
+                                <th>Обращение</th>
+                                <th>Количество</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Чистая прима (ч. 1)</td>
+                                <td>Чистая октава (ч. 8)</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Малая секунда (м. 2)</td>
+                                <td>Большая септима (б. 7)</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Малая терция (м. 3)</td>
+                                <td>Большая секста (б. 6)</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Чистая кварта (ч. 4)</td>
+                                <td>Чистая квинта (ч. 5)</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Увеличенная кварта (ув. 4)</td>
+                                <td>Уменьшенная квинта (ум. 5)</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2>Определение интервалов в тональностях</h2>
+                <p>
+                    Для того чтобы определить, в каких тональностях натурального мажора и минора встречается данный диатонический интервал, можно использовать квинтовый круг. Например, терция а—с# встречается в трёх парах параллельных тональностей (большие терции или малые сексты) не меньше, чем с двумя диезами, и не больше, чем с четырьмя диезами. Эти тональности — <b>E</b> мажор, <b>B</b> мажор, <b>A</b> мажор, <b>F#</b> мажор, <b>D#</b> минор и <b>C#</b> минор.
+                </p>
+            </div>
+        </main>
+        <?php include './components/footer.php'?>
+    </div>
+
+</body>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/theme-swap.js"></script>
+<script src="/assets/js/sidebar-links.js"></script>
+</html>
