@@ -48,7 +48,7 @@ body {
     height: 100vh;
     
     /* Фон */
-    background: url('/assets/media/svg/animated.svg') no-repeat center center;
+    background: url('/public/assets/media/svg/animated.svg') no-repeat center center;
     background-size: cover;
     
     /* Размытие фона */

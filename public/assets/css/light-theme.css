@@ -41,7 +41,7 @@ body {
     font-family: Arial, sans-serif;
     /* background: linear-gradient(to left, #232526, #414345); */
     /* background-color: #f0f0f0; */
-    background: url('/assets/media/svg/sprinkle-lightv2.svg');
+    background: url('/public/assets/media/svg/sprinkle-lightv2.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Закрепите фоновое изображение */

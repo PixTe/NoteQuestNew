@@ -1,39 +1,25 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
-    
+
     # Разрешаем доступ к статическим файлам
-    RewriteRule ^(assets/css/.*|assets/js/.*|assets/media/.*)$ - [L]
-    
+    RewriteRule ^public/assets/(css|js|media)/.*$ - [L]
+
     # Перенаправляем запросы к папке page на index.php?page=...
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^page/(lessons/.*|[^/]+\.php)$ index.php?page=$1 [L]
-    
+    RewriteRule ^public/pages/(.*)$ index.php?page=$1 [L]
+
     # Правила для маршрутизации URL
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^classes$ index.php?page=classes [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^lessons/music-basics$ index.php?page=lessons/music-basics [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^lessons/notes-intervals$ index.php?page=lessons/notes-intervals [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^register$ index.php?page=register [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^login$ index.php?page=login [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^lessons/music-basics$ index.php?page=lessons/music-basics [L]
+    #RewriteRule ^lessons/notes-intervals$ index.php?page=lessons/notes-intervals [L]
+    RewriteRule ^register$ index.php?page=auth/register [L]
+    RewriteRule ^login$ index.php?page=auth/login [L]
     RewriteRule ^user$ index.php?page=user [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^about$ index.php?page=about [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^admin$ admin/index.php [L]
 
     # Правило для маршрутизации профиля пользователя
@@ -42,11 +28,9 @@
     RewriteRule ^([^/]+)$ user.php?username=$1 [L]
 
     # Правило для маршрутизации уроков по ID
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^lessons/lesson$ index.php?page=lesson&id=$1 [QSA,L]
 
     # 404 страница по умолчанию
-    ErrorDocument 404 /404.php
-    ErrorDocument 500 /500.php
+    ErrorDocument 404 /public/pages/404.php
+    ErrorDocument 500 /public/pages/500.php
 </IfModule>

@@ -265,3 +265,109 @@
 [2024-06-01 17:09:50] Ошибка: [2] Trying to access array offset on value of type bool в C:\xampp\htdocs\notequest\includes\connection.php на строке 41
 [2024-06-01 17:09:50] Ошибка: [2] Trying to access array offset on value of type bool в C:\xampp\htdocs\notequest\includes\connection.php на строке 42
 [2024-06-01 17:09:50] Ошибка: [2] Trying to access array offset on value of type bool в C:\xampp\htdocs\notequest\includes\connection.php на строке 42
+[2024-06-03 15:29:10] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:10] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:14] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:14] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:20] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:20] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:47] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:47] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:48] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:48] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:48] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:48] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:48] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:29:48] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:30:21] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:30:21] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:30:22] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 15:30:22] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\home.html на строке 12
+[2024-06-03 16:03:34] Ошибка: [2] include(components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:34] Ошибка: [2] include(): Failed opening 'components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:34] Ошибка: [2] include(components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:34] Ошибка: [2] include(): Failed opening 'components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:57] Ошибка: [2] include(components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:57] Ошибка: [2] include(): Failed opening 'components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:57] Ошибка: [2] include(components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:03:57] Ошибка: [2] include(): Failed opening 'components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:18] Ошибка: [2] include(/public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:18] Ошибка: [2] include(): Failed opening '/public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:18] Ошибка: [2] include(/public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:18] Ошибка: [2] include(): Failed opening '/public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:22] Ошибка: [2] include(/public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:22] Ошибка: [2] include(): Failed opening '/public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:22] Ошибка: [2] include(/public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:22] Ошибка: [2] include(): Failed opening '/public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:26] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:26] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:26] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:26] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:27] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:27] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:27] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:27] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:42] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:42] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:42] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:42] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:43] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:43] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:44] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(./public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:45] Ошибка: [2] include(): Failed opening './public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(public/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:04:52] Ошибка: [2] include(): Failed opening 'public/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:27] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:27] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:27] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:27] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:28] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:28] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:28] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:28] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(/public/pages/components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:05:29] Ошибка: [2] include(): Failed opening '/public/pages/components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\login.html на строке 6
+[2024-06-03 16:06:00] Ошибка: [2] include(components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6
+[2024-06-03 16:06:00] Ошибка: [2] include(): Failed opening 'components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6
+[2024-06-03 16:06:25] Ошибка: [2] include(public/pagescomponents/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6
+[2024-06-03 16:06:25] Ошибка: [2] include(): Failed opening 'public/pagescomponents/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6

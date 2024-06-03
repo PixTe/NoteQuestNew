@@ -9,12 +9,12 @@ $lessons = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html lang="ru">
-    <?php include './components/head.php'; ?>
-    <link rel="stylesheet" id="theme-style" type="text/css" href="/assets/css/style-theme.css">
+    <?php include 'public/pages/components/head.php'; ?>
+    <link rel="stylesheet" id="theme-style" type="text/css" href="/public/assets/css/style-theme.css">
     <title>Note Quest</title>
     <body>
         <div class="layout">
-            <?php include './components/navbar.php'; ?>
+            <?php include './public/pages/components/navbar.php'; ?>
             <main class="home-page">
                 <section class="container">
                     <h3>Добро пожаловать на NoteQuest</h3>
@@ -42,9 +42,9 @@ $lessons = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <?php endforeach; ?>
                 </section>
             </main>
-            <?php include './components/footer.php'; ?>
+            <?php include './public/pages/components/footer.php'; ?>
         </div>
     </body>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/theme-swap.js"></script>
+    <script src="/public/assets/js/main.js"></script>
+    <script src="/public/assets/js/theme-swap.js"></script>
 </html>

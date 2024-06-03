@@ -38,7 +38,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background: url('/assets/media/svg/Sprinkle.svg');
+    background: url('/public/assets/media/svg/Sprinkle.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Закрепите фоновое изображение */

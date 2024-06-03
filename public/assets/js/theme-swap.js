@@ -9,24 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
         themeStyle.href = isSpecialPage
-            ? `/assets/css/${currentTheme}-theme-register.css`
-            : `/assets/css/${currentTheme}-theme.css`;
+            ? `/public/assets/css/${currentTheme}-theme-register.css`
+            : `/public/assets/css/${currentTheme}-theme.css`;
     } else {
         themeStyle.href = isSpecialPage
-            ? '/assets/css/light-theme-register.css'
-            : '/assets/css/light-theme.css';
+            ? '/public/assets/css/light-theme-register.css'
+            : '/public/assets/css/light-theme.css';
     }
 
     themeToggle.addEventListener('click', () => {
-        if (themeStyle.href.includes('/assets/css/light-theme.css')) {
+        if (themeStyle.href.includes('/public/assets/css/light-theme.css')) {
             themeStyle.href = isSpecialPage
-                ? '/assets/css/style-theme-register.css'
-                : '/assets/css/style-theme.css';
+                ? '/public/assets/css/style-theme-register.css'
+                : '/public/assets/css/style-theme.css';
             localStorage.setItem('theme', 'style');
         } else {
             themeStyle.href = isSpecialPage
-                ? '/assets/css/light-theme-register.css'
-                : '/assets/css/light-theme.css';
+                ? '/public/assets/css/light-theme-register.css'
+                : '/public/assets/css/light-theme.css';
             localStorage.setItem('theme', 'light');
         }
     });

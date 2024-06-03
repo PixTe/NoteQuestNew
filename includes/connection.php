@@ -3,9 +3,9 @@
 
 // Функция для записи логов
 function logError($message) {
-    $logFile = 'logs/errors/server-err.txt'; 
-    $timestamp = date('Y-m-d H:i:s');
-    file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
+    // $logFile = 'logs/errors/server-err.txt'; 
+    // $timestamp = date('Y-m-d H:i:s');
+    // file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
 }
 
 // Обработчик ошибок
@@ -34,14 +34,14 @@ function pdo(): PDO
 {
     static $pdo;
 
-    if(!$pdo) {
-        $config = include './config.php';
+    if (!$pdo) {
+        $config = include './config/config.php';
         //DB Connect
-        try{
-            $dsn = 'mysql:dbname='.$config['db_name'].';host='.$config['db_host'];
+        try {
+            $dsn = 'mysql:dbname=' . $config['db_name'] . ';host=' . $config['db_host'];
             $pdo = new PDO($dsn, $config['db_user'], $config['db_pass']);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }catch(PDOException $e) {
+        } catch (PDOException $e) {
             die("Ошибка подключения к базе данных: " . $e->getMessage());
         }
     }
