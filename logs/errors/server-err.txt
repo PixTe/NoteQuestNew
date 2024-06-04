@@ -371,3 +371,53 @@
 [2024-06-03 16:06:00] Ошибка: [2] include(): Failed opening 'components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6
 [2024-06-03 16:06:25] Ошибка: [2] include(public/pagescomponents/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6
 [2024-06-03 16:06:25] Ошибка: [2] include(): Failed opening 'public/pagescomponents/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\auth\register.html на строке 6
+[2024-06-04 22:08:24] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:08:24] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:12] Ошибка: [2] require_once(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:12] Непойманное исключение: Failed opening required 'config/config.php' (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:13] Ошибка: [2] require_once(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:13] Непойманное исключение: Failed opening required 'config/config.php' (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:14] Ошибка: [2] require_once(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:14] Непойманное исключение: Failed opening required 'config/config.php' (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:15] Ошибка: [2] require_once(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:15] Непойманное исключение: Failed opening required 'config/config.php' (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:17] Ошибка: [2] require_once(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:17] Непойманное исключение: Failed opening required 'config/config.php' (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:18] Ошибка: [2] require_once(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:18] Непойманное исключение: Failed opening required 'config/config.php' (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:25] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:09:25] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:17:17] Ошибка: [2] include(../config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:17:17] Ошибка: [2] include(): Failed opening '../config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:18:17] Ошибка: [2] include(./components/head.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\about.html на строке 6
+[2024-06-04 22:18:17] Ошибка: [2] include(): Failed opening './components/head.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\about.html на строке 6
+[2024-06-04 22:18:17] Ошибка: [2] include(./components/navbar.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\about.html на строке 11
+[2024-06-04 22:18:17] Ошибка: [2] include(): Failed opening './components/navbar.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\about.html на строке 11
+[2024-06-04 22:18:17] Ошибка: [2] include(./components/footer.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\public\pages\about.html на строке 28
+[2024-06-04 22:18:17] Ошибка: [2] include(): Failed opening './components/footer.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\public\pages\about.html на строке 28
+[2024-06-04 22:36:26] Ошибка: [2] include(C:\xampp\htdocs\notequest\includesconfig/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:26] Ошибка: [2] include(): Failed opening 'C:\xampp\htdocs\notequest\includesconfig/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:33] Ошибка: [2] include(C:\xampp\htdocs\notequest\includes/config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:33] Ошибка: [2] include(): Failed opening 'C:\xampp\htdocs\notequest\includes/config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:34] Ошибка: [2] include(C:\xampp\htdocs\notequest\includes/config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:34] Ошибка: [2] include(): Failed opening 'C:\xampp\htdocs\notequest\includes/config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:47] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:36:47] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:09] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:10] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:21] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:21] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:22] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:22] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:32] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:38:32] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:41:31] Ошибка: [2] include(C:\xampp\htdocs\notequest\includesconfig/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:41:31] Ошибка: [2] include(): Failed opening 'C:\xampp\htdocs\notequest\includesconfig/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:43:43] Ошибка: [2] include(C:\xampp\htdocs\notequest\includes/config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:43:43] Ошибка: [2] include(): Failed opening 'C:\xampp\htdocs\notequest\includes/config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:44:14] Ошибка: [2] include(/config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:44:14] Ошибка: [2] include(): Failed opening '/config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:44:35] Ошибка: [2] include(config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:44:35] Ошибка: [2] include(): Failed opening 'config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:45:10] Ошибка: [2] include(./config/config.php): Failed to open stream: No such file or directory в C:\xampp\htdocs\notequest\includes\connection.php на строке 38
+[2024-06-04 22:45:10] Ошибка: [2] include(): Failed opening './config/config.php' for inclusion (include_path='C:\xampp\php\PEAR') в C:\xampp\htdocs\notequest\includes\connection.php на строке 38

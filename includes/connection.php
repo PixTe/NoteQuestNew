@@ -3,7 +3,7 @@
 
 // Функция для записи логов
 function logError($message) {
-    // $logFile = 'logs/errors/server-err.txt'; 
+    // $logFile = '../logs/errors/server-err.txt'; 
     // $timestamp = date('Y-m-d H:i:s');
     // file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
 }
@@ -35,7 +35,11 @@ function pdo(): PDO
     static $pdo;
 
     if (!$pdo) {
-        $config = include './config/config.php';
+        $config = include __DIR__ . '/../config/config.php';
+        if (!is_array($config)) {
+            die("Ошибка чтения конфигурационного файла.");
+        }
+
         //DB Connect
         try {
             $dsn = 'mysql:dbname=' . $config['db_name'] . ';host=' . $config['db_host'];
@@ -47,4 +51,5 @@ function pdo(): PDO
     }
     return $pdo;
 }
+
 ?>

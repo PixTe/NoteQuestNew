@@ -1,5 +1,5 @@
 <?php
-    
+session_start();
     require_once 'includes/connection.php';
 
     $is_logged_in = isset($_SESSION['user_id']);
