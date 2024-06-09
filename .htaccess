@@ -30,6 +30,9 @@
     # Правило для маршрутизации уроков по ID
     RewriteRule ^lessons/lesson$ index.php?page=lesson&id=$1 [QSA,L]
 
+    # Правило для маршрутизации уроков по ID
+    RewriteRule ^lessons/test$ index.php?page=test&id=$1 [QSA,L]
+
     # 404 страница по умолчанию
     ErrorDocument 404 /public/pages/404.php
     ErrorDocument 500 /public/pages/500.php

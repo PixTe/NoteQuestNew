@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Generate sidebar links from h2 elements
-    const headers = document.querySelectorAll('.learn-content h2');
+    const headers = document.querySelectorAll('.learn-page h2');
     headers.forEach((header, index) => {
         const id = 'section' + (index + 1);
         header.id = id;

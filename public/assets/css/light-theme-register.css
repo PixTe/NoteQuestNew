@@ -46,7 +46,7 @@ body {
     height: 100vh;
     
     /* Фон */
-    background: url('/assets/media/svg/animated-light.svg') no-repeat center center;
+    background: url('/public/assets/media/svg/animated-light.svg') no-repeat center center;
     background-size: cover;
     
     /* Размытие фона */
@@ -63,9 +63,24 @@ body {
     background-color: #F0F0F0;
 }
 
+.error{
+    color: #d54c4c;
+    text-align: center;
+}
+
+.error-border {
+    border: 2px solid #d54c4c;
+}
+
 h2 {
     text-align: center;
     color: #333;
+}
+
+.sign-form {
+    display: flex;
+    flex-direction: column; /* Структурирует форму как вертикальный список */
+    gap: 12px; /* Отступ между элементами */
 }
 
 /* Стиль для элементов формы */

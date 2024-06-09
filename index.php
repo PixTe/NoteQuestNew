@@ -33,6 +33,15 @@ if ($page === 'lesson' && isset($_GET['id'])) {
     exit(); // Прерываем выполнение скрипта после подключения страницы
 }
 
+// Проверка для страницы урока
+if ($page === 'test' && isset($_GET['id'])) {
+    $test_id = $_GET['id'];
+    // Подключаем файл lesson.html из папки lessons
+    $file = 'public/pages/lessons/test.html';
+    includeFileOr404($file);
+    exit(); // Прерываем выполнение скрипта после подключения страницы
+}
+
 // Список допустимых страниц
 $valid_pages = [
     'home',

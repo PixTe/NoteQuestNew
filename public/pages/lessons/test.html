@@ -1,0 +1,106 @@
+<?php
+require_once 'includes/check_session.php';
+require_once 'includes/connection.php';
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: /login');
+    exit();
+}
+
+$testId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+$pdo = pdo();
+$testStmt = $pdo->prepare('SELECT * FROM Tests WHERE id = ?');
+$testStmt->execute([$testId]);
+$test = $testStmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$test) {
+    include '404.php';
+    exit;
+}
+
+$questionStmt = $pdo->prepare('SELECT * FROM Questions WHERE test_id = ?');
+$questionStmt->execute([$testId]);
+$questions = $questionStmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" id="theme-style" type="text/css" href="/public/assets/css/light-theme.css">
+    <title><?php echo htmlspecialchars($test['title']); ?></title>
+    <?php include 'public/pages/components/head.php'?>
+</head>
+<body>
+<div class="layout">
+    <?php include 'public/pages/components/navbar.php'?>
+    <main>
+        <div class="test-page">
+            <h1><?php echo htmlspecialchars($test['title']); ?></h1>
+            <form id="testForm">
+                <input type="hidden" name="test_id" value="<?php echo $testId; ?>">
+                <?php foreach ($questions as $question): ?>
+                    <div class="question" id="question_<?php echo $question['id']; ?>">
+                        <p><?php echo htmlspecialchars($question['question_text']); ?></p>
+                        <?php
+                        $answerStmt = $pdo->prepare('SELECT * FROM Answers WHERE question_id = ?');
+                        $answerStmt->execute([$question['id']]);
+                        $answers = $answerStmt->fetchAll(PDO::FETCH_ASSOC);
+                        ?>
+                        <?php foreach ($answers as $answer): ?>
+                            <div class="answer">
+                                <input type="radio" name="question_<?php echo $question['id']; ?>" value="<?php echo $answer['id']; ?>" required>
+                                <label><?php echo htmlspecialchars($answer['answer_text']); ?></label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endforeach; ?>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <?php include 'public/pages/components/footer.php'?>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/public/assets/js/main.js"></script>
+<!-- <script src="/public/assets/js/theme-swap.js"></script> -->
+<script>
+    $(document).ready(function() {
+        $('#testForm').on('submit', function(e) {
+            e.preventDefault();
+            
+            $.ajax({
+                type: 'POST',
+                url: '/includes/submit_test.php',
+                data: $(this).serialize(),
+                success: function(response) {
+                    var jsonResponse = JSON.parse(response);
+                    if (jsonResponse.success) {
+                        alert("Test submitted successfully!");
+                        // Handle success (e.g., display score, redirect, etc.)
+                        // Update UI to mark correct and incorrect answers
+                        var results = jsonResponse.results;
+                        for (var questionId in results) {
+                            if (results.hasOwnProperty(questionId)) {
+                                var isCorrect = results[questionId];
+                                var question = $('#question_' + questionId);
+                                if (isCorrect) {
+                                    question.addClass('correct-answer');
+                                } else {
+                                    question.addClass('incorrect-answer');
+                                }
+                            }
+                        }
+                    } else {
+                        alert("Failed to submit test: " + jsonResponse.error);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error submitting test:", error);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

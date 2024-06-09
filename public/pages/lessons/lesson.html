@@ -3,6 +3,10 @@ require_once 'includes/check_session.php';
 // Подключение к базе данных
 require_once 'includes/connection.php';
 
+$isUserLoggedIn = isset($_SESSION['user_id']);
+
+$isRoleMod = isset($_SESSION['role']) && $_SESSION['role'] === 'moderator';
+
 // Получение ID урока из параметра запроса
 $lessonId = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
@@ -15,34 +19,66 @@ if (!$lesson) {
     include '404.php';
     exit;
 }
-?>
 
+$testStmt = $pdo->prepare('SELECT * FROM Tests WHERE lesson_id = ?');
+$testStmt->execute([$lessonId]);
+$tests = $testStmt->fetchAll(PDO::FETCH_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
-<link rel="stylesheet" id="theme-style" type="text/css" href="/public/assets/css/style-theme.css">
+<link rel="stylesheet" id="theme-style" type="text/css" href="/public/assets/css/light-theme.css">
 <title><?php echo htmlspecialchars($lesson['title']); ?></title>
 <?php include 'public/pages/components/head.php'?>
 <body>
 <div class="layout">
         <?php include 'public/pages/components/navbar.php'?>
-        <main class="learn-page">
-            <div class="sidebar" id="sidebar">
-                <button id="closeBtn" class="close-btn"><</button>
-                <ul class="sidebar-links" id="sidebar-links">
+        <main>
+            <div class="learn-page">
+                <div class="sidebar" id="sidebar">
+                    <button id="closeBtn" class="close-btn"><</button>
+                    <ul class="sidebar-links" id="sidebar-links">
 
-                </ul>
+                    </ul>
+                </div>
+                    <button id="openBtn" class="open-btn">></button>
+                    <div class="learn-content">
+                        <h1><?php echo htmlspecialchars($lesson['title']); ?></h1>
+                        <?php echo $lesson['content']; ?>
+                </div>
             </div>
-            <button id="openBtn" class="open-btn">></button>
-            <div class="learn-content">
-                <h1><?php echo htmlspecialchars($lesson['title']); ?></h1>
-                <?php echo $lesson['content']; ?>
+            <div class="tests">
+                <h2>Тесты</h2>
+                <?php foreach ($tests as $test): ?>
+                    <div class="test">
+                        <h2><?php echo htmlspecialchars($test['title']); ?></h2>
+                        <?php if ($isUserLoggedIn): ?>
+                            <a href="test?id=<?php echo $test['id']; ?>">Пройти тест >></a>
+                        <?php else: ?>
+                            <p><a style="text-decoration: underline;" href="/login">Войдите</a> в систему, чтобы пройти тест</p>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="comments">
+                <h1>Комментарии</h1>
+                <form id="commentForm" class="comForm">
+                    <textarea name="content" id="content" placeholder="Написать сообщение..." required></textarea>
+                    <input type="hidden" id="lesson_id" name="lesson_id" value="<?php echo htmlspecialchars($lessonId); ?>">
+                    <button type="submit">Отправить</button>
+                </form>
+                <div id="commentsContainer">
+
+                </div>
             </div>
         </main>
         <?php include 'public/pages/components/footer.php'?>
-    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/public/assets/js/comjs.js"></script>
 <script src="/public/assets/js/main.js"></script>
-<script src="/public/assets/js/theme-swap.js"></script>
+<!-- <script src="/public/assets/js/theme-swap.js"></script> -->
 <script src="/public/assets/js/sidebar-links.js"></script>
 </body>
 </html>
-    

@@ -19,12 +19,12 @@ if (!$username) {
     exit;
 }
 
-// Получаем информацию о запрашиваемом пользователе из базы данных
+// Получение информации о запрашиваемом пользователе из базы данных
 $stmt = pdo()->prepare("SELECT * FROM `users` WHERE `username` = :username");
 $stmt->execute(['username' => $username]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// Если пользователь не найден, выводим сообщение об ошибке
+// Если пользователь не найден, выводится сообщение об ошибке
 if (!$user) {
     include( 'public/pages/404.php');
     exit;
@@ -34,7 +34,7 @@ if (!$user) {
 <html lang="ru">
 <head>
     <?php include 'public/pages/components/head.php'; ?>
-    <link rel="stylesheet" id="theme-style" type="text/css" href="/public/assets/css/style-theme.css">
+    <link rel="stylesheet" id="theme-style" type="text/css" href="/public/assets/css/light-theme.css">
     <title>Профиль пользователя - <?php echo htmlspecialchars($user['username']); ?></title>
 </head>
 <body>
@@ -42,7 +42,9 @@ if (!$user) {
         <?php include 'public/pages/components/navbar.php'; ?>
         <main class="user-page">
             <div class="user-block">
-                <h1>Здравствуйте, <?php echo htmlspecialchars($user['username']) ?></h1>
+            <div class="avatar-name"><?php echo '<img src="../public/assets/media/avatars/' . htmlspecialchars($_SESSION['avatar']) . '" alt="Avatar" class="avatar">'; 
+            echo htmlspecialchars($user['username']) ?></div>
+                
                 <!-- Здесь можно добавить дополнительные данные о пользователе -->
             </div>
         </main>
@@ -50,5 +52,4 @@ if (!$user) {
     </div>
 </body>
 <script src="/public/assets/js/main.js"></script>
-<script src="/public/assets/js/theme-swap.js"></script>
 </html>

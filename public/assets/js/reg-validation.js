@@ -104,7 +104,6 @@ function isValidEmail(email) {
 }
 
 function isValidUsername(username) {
-    // Регулярное выражение для проверки имени пользователя (только латинские буквы)
-    const usernamePattern = /^[a-zA-Z]+$/;
+    const usernamePattern = /^[a-zA-Z0-9_]+$/;
     return usernamePattern.test(username);
 }

@@ -28,6 +28,9 @@ try {
 
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
+            $_SESSION['role'] = $user['role'];
+            $_SESSION['avatar'] = $user['avatar'];
+            
             $stmt = pdo()->prepare("UPDATE `users` SET `session_status` = 1 WHERE `email` = :email");
             $stmt->execute(['email' => $_POST['email']]);
             logMessage('Обновление session_status для пользователя: ' . $_POST['email']);

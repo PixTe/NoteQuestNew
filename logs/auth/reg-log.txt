@@ -225,3 +225,13 @@
 [2024-06-04 23:46:45] [INFO] Запрос к БД выполнен: SELECT * FROM `users` WHERE `email` = Beeramonqqwwee@gmail.com
 [2024-06-04 23:46:45] [INFO] Добавление пользователя: Beeramonqqwwee
 [2024-06-04 23:46:45] [INFO] Пользователь успешно зарегистрирован: Beeramonqqwwee
+[2024-06-05 08:44:39] [INFO] Начало выполнения скрипта регистрации
+[2024-06-05 08:44:39] [INFO] Запрос к БД выполнен: SELECT * FROM `users` WHERE `username` = newuser
+[2024-06-05 08:44:39] [INFO] Запрос к БД выполнен: SELECT * FROM `users` WHERE `email` = newuser@mail.ru
+[2024-06-05 08:44:39] [INFO] Добавление пользователя: newuser
+[2024-06-05 08:44:39] [INFO] Пользователь успешно зарегистрирован: newuser
+[2024-06-09 13:12:05] [INFO] Начало выполнения скрипта регистрации
+[2024-06-09 13:12:05] [INFO] Запрос к БД выполнен: SELECT * FROM `users` WHERE `username` = qweqwe
+[2024-06-09 13:12:05] [INFO] Запрос к БД выполнен: SELECT * FROM `users` WHERE `email` = qweqweq@qweqwe.qwe
+[2024-06-09 13:12:05] [INFO] Добавление пользователя: qweqwe
+[2024-06-09 13:12:05] [INFO] Пользователь успешно зарегистрирован: qweqwe

@@ -1,7 +1,5 @@
 <?php
-// session_start();
 
-// Функция для записи логов
 function logError($message) {
     // $logFile = '../logs/errors/server-err.txt'; 
     // $timestamp = date('Y-m-d H:i:s');
